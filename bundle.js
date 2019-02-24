@@ -8,8 +8,10 @@ var Draw = /** @class */ (function () {
         this.context = context;
     }
     Draw.prototype.DrawObjects = function () {
-        var circle = new Circle_1.default(100, 100, 50, new ColorRGB_1.default(100, 100, 100), this.context);
-        circle.Draw();
+        for (var i = 1; i < 2000; i *= 1.5) {
+            var circle = new Circle_1.default(100 + i, 100 + i, 50, new ColorRGB_1.default(100, 100, 100), this.context);
+            circle.Draw();
+        }
     };
     return Draw;
 }());

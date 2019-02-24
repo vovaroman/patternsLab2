@@ -7,8 +7,10 @@ class Draw{
         this.context = context;
     }
     DrawObjects(){
-        let circle:Circle = new Circle(100,100,50,new ColorRGB(100,100,100),this.context);
-        circle.Draw();
+        for(let i=1;i<2000;i*=1.5){
+            let circle:Circle = new Circle(100+i,100+i,50,new ColorRGB(100,100,100),this.context);
+            circle.Draw();
+        }      
     }
 
 }
