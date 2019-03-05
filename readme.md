@@ -22,7 +22,7 @@ npx browserify -p esmify main.js -o bundle.js
 ```
 
 ## Adapter
-[Adapter](https://refactoring.guru/images/patterns/cards/adapter-mini-2x.png)
+![Adapter](https://refactoring.guru/images/patterns/cards/adapter-mini-2x.png)
 
 Адаптер — это структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе.
 
@@ -58,7 +58,7 @@ class ColorAdapter implements IColorHEX,IColorRGB{
 ```
 
 ## Decorator
-[Decorator](https://refactoring.guru/images/patterns/cards/decorator-mini-2x.png)
+![Decorator](https://refactoring.guru/images/patterns/cards/decorator-mini-2x.png)
 
 Декоратор — это структурный паттерн проектирования, который позволяет динамически добавлять объектам новую функциональность, оборачивая их в полезные «обёртки».
 
@@ -75,7 +75,7 @@ Draw(){
 ```
 
 ## Bridge
-[Bridge](https://refactoring.guru/images/patterns/cards/bridge-mini-2x.png)
+![Bridge](https://refactoring.guru/images/patterns/cards/bridge-mini-2x.png)
 
 Мост — это структурный паттерн проектирования, который разделяет один или несколько классов на две отдельные иерархии — абстракцию и реализацию, позволяя изменять их независимо друг от друга.
 
@@ -96,7 +96,7 @@ class Circle {
 ```
 
 ## Iterator
-[Iterator](https://refactoring.guru/images/patterns/cards/iterator-mini-2x.png)
+![Iterator](https://refactoring.guru/images/patterns/cards/iterator-mini-2x.png)
 
 Итератор — это поведенческий паттерн проектирования, который даёт возможность последовательно обходить элементы составных объектов, не раскрывая их внутреннего представления.
 
@@ -150,7 +150,7 @@ export default Iterator
 ```
 
 ## Memento
-[Iterator](https://refactoring.guru/images/patterns/cards/memento-mini-2x.png)
+![Iterator](https://refactoring.guru/images/patterns/cards/memento-mini-2x.png)
 
 Снимок — это поведенческий паттерн проектирования, который позволяет сохранять и восстанавливать прошлые состояния объектов, не раскрывая подробностей их реализации.
 
