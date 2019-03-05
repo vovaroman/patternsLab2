@@ -29,7 +29,7 @@ class ColorAdapter implements IColorHEX,IColorRGB{
         this.Red = colorObject.Red;
         this.Green = colorObject.Green;
         this.Blue = colorObject.Blue;
-        this.Hex = colorObject.Red.toString(16) + colorObject.Green.toString(16) + colorObject.Blue.toString(16);
+        this.Hex = '#' + colorObject.Red.toString(16) + colorObject.Green.toString(16) + colorObject.Blue.toString(16);
     }
     constructor(colorObject:any){
 
