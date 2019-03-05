@@ -1,5 +1,5 @@
 
-#Patterns second lab
+# Patterns second lab
 
 1.Адаптер -> принудительно привести один объект к интерфейсу другого +
 2.Декоратор -> оборачиваем функцию в другую с дополнительным функционалом +
@@ -7,26 +7,26 @@
 4.Иттератор -> реализация разных проходов по листу +
 5.Снимок -> история объекта +
 
-##Build Commands
+## Build Commands
 
 ```
 tsc -t es5 main.ts
 browserify main.js > bundle.js
 ```
 
-##New Build Commands
+## New Build Commands
 
 ```
 tsc -t es2015 main.ts
 npx browserify -p esmify main.js -o bundle.js
 ```
 
-##Adapter
-[Adapter(https://refactoring.guru/images/patterns/cards/adapter-mini-2x.png)]
+## Adapter
+[Adapter](https://refactoring.guru/images/patterns/cards/adapter-mini-2x.png)
 
 Адаптер — это структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе.
 
-###Hex color Interface
+### Hex color Interface
 ```
 interface IColorHEX{
     Hex:string;
@@ -35,7 +35,7 @@ interface IColorHEX{
 export default IColorHEX;
 ```
 
-###RGB color Interface
+### RGB color Interface
 ```
 interface IColorRGB{
     Red:number;
@@ -46,7 +46,7 @@ interface IColorRGB{
 export default IColorRGB;
 ```
 
-###Color Adapter класс который позволяет RGB и HEX объединить
+### Color Adapter класс который позволяет RGB и HEX объединить
 
 ```
 class ColorAdapter implements IColorHEX,IColorRGB{
@@ -57,8 +57,8 @@ class ColorAdapter implements IColorHEX,IColorRGB{
 }
 ```
 
-##Decorator
-[Decorator(https://refactoring.guru/images/patterns/cards/decorator-mini-2x.png)]
+## Decorator
+[Decorator](https://refactoring.guru/images/patterns/cards/decorator-mini-2x.png)
 
 Декоратор — это структурный паттерн проектирования, который позволяет динамически добавлять объектам новую функциональность, оборачивая их в полезные «обёртки».
 
@@ -74,8 +74,8 @@ Draw(){
 
 ```
 
-##Bridge
-[Bridge(https://refactoring.guru/images/patterns/cards/bridge-mini-2x.png)]
+## Bridge
+[Bridge](https://refactoring.guru/images/patterns/cards/bridge-mini-2x.png)
 
 Мост — это структурный паттерн проектирования, который разделяет один или несколько классов на две отдельные иерархии — абстракцию и реализацию, позволяя изменять их независимо друг от друга.
 
@@ -95,8 +95,8 @@ class Circle {
 }
 ```
 
-##Iterator
-[Iterator(https://refactoring.guru/images/patterns/cards/iterator-mini-2x.png)]
+## Iterator
+[Iterator](https://refactoring.guru/images/patterns/cards/iterator-mini-2x.png)
 
 Итератор — это поведенческий паттерн проектирования, который даёт возможность последовательно обходить элементы составных объектов, не раскрывая их внутреннего представления.
 
@@ -149,8 +149,8 @@ class Iterator implements IITerator{
 export default Iterator
 ```
 
-##Memento
-[Iterator(https://refactoring.guru/images/patterns/cards/memento-mini-2x.png)]
+## Memento
+[Iterator](https://refactoring.guru/images/patterns/cards/memento-mini-2x.png)
 
 Снимок — это поведенческий паттерн проектирования, который позволяет сохранять и восстанавливать прошлые состояния объектов, не раскрывая подробностей их реализации.
 
